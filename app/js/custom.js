@@ -4,3 +4,11 @@ $(document).ready(function() {
     return false;
   })
 });
+
+
+$('.main-slider').slick({
+  autoplay: true,
+  dots: true,
+  mobileFirst: true,
+  dotsClass: 'slide-dots'
+});
