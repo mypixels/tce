@@ -1,0 +1,27 @@
+// Base Rules
+*
+  margin: 0
+  padding: 0
+
+*, *:before, *:after
+  box-sizing: border-box
+
+body,
+html
+  height: 100%
+
+body
+  width: 100%
+
+// Theme Rules
+
+.grid-wrap
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-auto-flow: dense
+  max-width: 1200px
+  margin: 0 auto
+
+.grid-item-stretch
+  grid-column: 2/4
+  background: red
