@@ -3,27 +3,32 @@ footer
 
   .footer-container
     display: grid
-    grid-template-columns: repeat(4, 1fr)
-    max-width: 1200px
-    margin: 0 auto
+    grid-template-columns: 1fr
     text-align: center
     padding-bottom: 2em
-    color: $white
+    color: $default-text-color
+
+    @include tablet
+      grid-template-columns: repeat(4, 1fr)
+      max-width: 1200px
+      margin: 0 auto
 
     a
-      color: $white
+      color: $default-text-color
       transition: color .3s ease
 
       &:hover
-        color: $default-text-color
+        color: $white
 
     .footer-title
       width: 100%
       padding: 1em
-      color: $default-text-color
+      color: $white
+      text-decoration: underline
 
     .hours
-      grid-column: 2/4
+      @include tablet
+        grid-column: 2/4
 
       .opening-hours-days
         display: inline-grid

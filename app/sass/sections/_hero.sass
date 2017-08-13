@@ -1,15 +1,54 @@
+.hero-info
+  position: absolute
+  top: 4em
+  left: 0
+  width: 100%
+  color: $white
+  text-align: center
+  z-index: 1
+
+  @include desktop
+    top: 8em
+
+  h2
+    margin-bottom: 1em
+    color: $white
+
+  .hero-cta
+    width: 70%
+    background-color: $bronze
+    box-shadow: 3px 4px 10px rgba(0,0,0,0.4)
+    border-radius: 3px
+    margin: 0 auto
+    margin-top: 9em
+    padding: .4em
+    transition: all ease .2s
+
+    &:hover
+      background-color: darken($bronze, 3%)
+
+    @include desktop
+      width: 20%
+      margin-top: 28em
+
 .main-slider
   width: 100%
-  height: 800px
+  height: 400px
   margin-top: $navbar-height
 
+  @include desktop
+    height: 800px
+
   .slide-1, .slide-2, .slide-3
+    height: 400px
     background:
       image: url(../img/slide-test.jpg)
       position: center center
       size: cover
       repeat: no-repeat
-    height: 800px
+
+    @include desktop
+      height: 800px
 
   .slick-slide:focus
     outline: none
@@ -33,6 +72,7 @@
         background-color: rgba($white, .5)
         border-radius: 80%
         transition: all .4s ease
+        cursor: pointer
 
       &.slick-active
         button
@@ -43,10 +83,10 @@
 
 .mouse-animate
   position: absolute
-  top: 73%
+  top: 20em
   left: 50%
   transform: translateX(-50%)
   opacity: 0
 
-.hidden
-  display: none
+  @include tablet
+    top: 44em
