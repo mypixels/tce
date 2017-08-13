@@ -5,6 +5,8 @@ $(document).ready(function() {
   })
 });
 
+$('.mouse-animate').animate({'top': '+=5%', 'opacity': '1'}, 1500);
+
 
 $('.main-slider').slick({
   autoplay: true,
