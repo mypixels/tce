@@ -13,12 +13,12 @@
   h1
     margin-bottom: 1em
     color: $white
-    
+
   p
     font-size: 1.4rem
 
   .hero-cta
-    width: 20%
+    width: 60%
     background-color: $bronze
     box-shadow: 3px 4px 10px rgba(0,0,0,0.4)
     border-radius: 16px
@@ -31,6 +31,7 @@
       background-color: darken($bronze, 3%)
 
     @include desktop
+      width: 20%
       margin-top: 28em
 
 .main-slider
@@ -39,7 +40,7 @@
   margin-top: $navbar-height
 
   @include desktop
-    height: 800px
+    height: 600px
 
   .slide-1, .slide-2, .slide-3
     height: 400px
@@ -50,7 +51,7 @@
       repeat: no-repeat
 
     @include desktop
-      height: 800px
+      height: 600px
 
   .slick-slide:focus
     outline: none
