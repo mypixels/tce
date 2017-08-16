@@ -23,16 +23,32 @@
     box-shadow: 3px 4px 10px rgba(0,0,0,0.4)
     border-radius: 16px
     margin: 0 auto
-    margin-top: 9em
+    margin-top: 4em
     padding: .4em
     transition: all ease .2s
 
     &:hover
       background-color: darken($bronze, 3%)
 
+    @include tablet
+      margin-top: 5em
+
     @include desktop
       width: 20%
-      margin-top: 28em
+      margin-top: 13em
+
+.mouse-animate
+  position: absolute
+  top: 20em
+  left: 50%
+  transform: translateX(-50%)
+  opacity: 0
+
+  @include tablet
+    top: 20em
+
+  @include desktop
+    top: 32em
 
 .main-slider
   width: 100%
@@ -83,13 +99,3 @@
 
 .slick-next, .slick-prev
   display: none !important
-
-.mouse-animate
-  position: absolute
-  top: 20em
-  left: 50%
-  transform: translateX(-50%)
-  opacity: 0
-
-  @include tablet
-    top: 44em

@@ -5,9 +5,10 @@ $(document).ready(function() {
   })
 });
 
-$('.mouse-animate').animate({'top': '+=5%', 'opacity': '1'}, 1500);
+// Mouse SVG
+$('.mouse-animate').animate({'top': '+=2em', 'opacity': '1'}, 1500);
 
-
+// Slider Options
 $('.main-slider').slick({
   autoplay: true,
   dots: true,
