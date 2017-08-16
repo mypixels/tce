@@ -1,17 +1,35 @@
 #gallery
-  margin-top: $navbar-height
-  column-count: 4
-  column-gap: 20px
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 20px
+  margin: 0 auto
+  // column-gap: 20px
+  // column-count: 1
+
+  @include tablet
+    grid-template-columns: repeat(2, 1fr)
+    max-width: 1200px
+    margin-top: calc(20px + #{$navbar-height})
+    margin-bottom: $navbar-height
+  //   margin-top: $navbar-height
+  //   column-count: 2
+  //
+  @include desktop
+    grid-template-columns: repeat(4, 1fr)
+  //   column-count: 4
 
   .card
     width: 100%
     height: auto
-    margin: 4% auto
     box-shadow: -3px 5px 15px #000
     cursor: pointer
+    transition: box-shadow .2s ease
+
+    @include tablet
+      margin: 4% auto
 
 .modal-dialog
-  margin-top: $navbar-height
+  margin-top: calc(20px + #{$navbar-height})
 
 .modal-body
   padding: 0
