@@ -17,6 +17,9 @@
       max-width: 1200px
       margin: 0 auto
 
+    @include desktop
+      grid-template-columns: repeat(4, 2fr)
+
   .bottom-grid
     display: grid
     grid-template-columns: repeat(2, 1fr)
@@ -51,7 +54,7 @@
     @include tablet
       display: flex
       background:
-        image: url('https://unsplash.it/400/200/?random')
+        image: url('../img/gallery/shop_counter.jpg')
         position: 60%
         size: cover
         repeat: no-repeat
@@ -62,6 +65,9 @@
       position: center
       size: cover
       repeat: no-repeat
+
+    @include desktop
+      grid-column: 2/4
 
   .item-3
     background:
