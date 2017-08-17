@@ -1,12 +1,11 @@
 header
-  position: fixed
-  top: 0
-  left: 0
+  // position: fixed
+  // top: 0
+  // left: 0
   width: 100vw
   background-color: $bronze
   height: $navbar-height
   line-height: 50px
-  z-index: 2
 
   .nav-wrap
     max-width: 960px
@@ -20,6 +19,8 @@ header
     .logo
       padding-left: 1em
       width: 80%
+      font-family: 'Broadway', sans-serif
+      font-size: 2rem
 
       @include tablet
         padding-left: 0
@@ -86,4 +87,6 @@ header
               background-color: lighten($bronze, 15%)
 
     .expand
+      position: relative
       max-height: 20em
+      z-index: 2
