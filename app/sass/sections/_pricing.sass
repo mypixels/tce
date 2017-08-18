@@ -1,21 +1,30 @@
 .title
   text-align: center
   margin-top: $navbar-height
+  h1
+    color: $bronze
 
 .content-container
   max-width: 1200px
   margin: 0 auto
+  padding: 0 1em
   text-align: center
 
-  .colouring-table
+  @include tablet
+    padding: 0
+
+  .price-table
     display: flex
     justify-content: center
     font-size: 2rem
     margin: $navbar-height 0
 
-    .colour-info
-      margin-right: 12em
+    .price-table-info
+      margin-right: 2em
       text-align: left
+
+      @include tablet
+        margin-right: 12em
 
 p
   margin-bottom: 20px
