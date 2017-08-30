@@ -4,33 +4,25 @@
   h1
     color: $bronze
 
-.content-container
-  max-width: 1200px
+.sub-cat-title
+  width: 50%
   margin: 0 auto
-  padding: 0 1em
+  padding: 1.2em 0 .4em 0em
+  font-size: 3rem
 
-  @include tablet
-    padding: 0
+  span
+    font-size: 1.4rem
 
-  .sub-cat-title
-    width: 50%
-    margin: 0 auto
-    padding: 1.2em 0 .4em 0em
-    font-size: 3rem
+.price-table
+  width: 50%
+  font-size: 2rem
+  margin: 0 auto
+  padding-left: .4em
 
-    span
-      font-size: 1.4rem
+  li
+    display: flex
+    justify-content: space-between
+    min-width: 30%
 
-  .price-table
-    width: 50%
-    font-size: 2rem
-    margin: 0 auto
-    padding-left: .4em
-
-    li
-      display: flex
-      justify-content: space-between
-      min-width: 30%
-
-      .text-info
-        color: $bronze
+    .text-info
+      color: $bronze
