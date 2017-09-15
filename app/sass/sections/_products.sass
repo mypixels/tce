@@ -1,21 +1,33 @@
 .product-grid
   display: grid
   grid-template-columns: 1fr
-  grid-gap: .4em
+  grid-gap: 1.5em
   margin-top: 1em
+  margin-bottom: 1em
 
   @include tablet
+    grid-template-columns: repeat(2, 1fr)
+
+  @include desktop
     grid-template-columns: repeat(3, 1fr)
 
   .product-card
-    background-color: $white
-    padding: 2em 1em 1em 1em
+    border: 2px solid $bronze
+
+    .product-title
+      background-color: $bronze
+      color: $white
+      padding: .6em
 
     img
+      height: 400px
       margin: 0 auto
+      padding: 1em
 
     .product-desc
       display: flex
-      flex-direction: row
-      justify-content: space-between
-      padding-top: .6em
+      flex-direction: column
+      padding: .6em
+      font-size: 1.2em
+      background-color: $bronze
+      color: $white
