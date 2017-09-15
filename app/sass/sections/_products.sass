@@ -1,0 +1,21 @@
+.product-grid
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: .4em
+  margin-top: 1em
+
+  @include tablet
+    grid-template-columns: repeat(3, 1fr)
+
+  .product-card
+    background-color: $white
+    padding: 2em 1em 1em 1em
+
+    img
+      margin: 0 auto
+
+    .product-desc
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      padding-top: .6em
