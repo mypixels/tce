@@ -1,33 +1,12 @@
+.section-heading
+  width: 25%
+  padding: 1em
+  background-color: $product-heading
+
+  h2
+    text-transform: uppercase
+    color: white
+
 .product-grid
   display: grid
-  grid-template-columns: 1fr
-  grid-gap: 1.5em
-  margin-top: 1em
-  margin-bottom: 1em
-
-  @include tablet
-    grid-template-columns: repeat(2, 1fr)
-
-  @include desktop
-    grid-template-columns: repeat(3, 1fr)
-
-  .product-card
-    border: 2px solid $bronze
-
-    .product-title
-      background-color: $bronze
-      color: $white
-      padding: .6em
-
-    img
-      height: 400px
-      margin: 0 auto
-      padding: 1em
-
-    .product-desc
-      display: flex
-      flex-direction: column
-      padding: .6em
-      font-size: 1.2em
-      background-color: $bronze
-      color: $white
+  grid-template-columns: 1fr 1fr
