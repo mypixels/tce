@@ -1,6 +1,7 @@
 .product-section-title
   width: 100%
   border-bottom: 2px solid $bronze
+  margin-top: 2em
 
   h3
     padding-bottom: .2em
@@ -8,7 +9,10 @@
 
 .product-grid
   display: grid
-  grid-template-columns: 1fr 1fr
+  grid-template-columns: 1fr
+
+  @include tablet
+    grid-template-columns: 1fr 1fr
 
   .product-image
     display: flex
